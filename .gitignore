@@ -1,0 +1,13 @@
+/build/.vs/
+/build/_obj/
+/build/Debug/
+/build/Debug.Win32/
+*.sdf
+
+/cocos/platform/android/java/bin/
+/cocos/platform/android/java/gen/
+local.properties
+
+*/.DS_Store
+.DS_Store
+
