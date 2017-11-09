@@ -223,11 +223,11 @@ Application::Platform  Application::getTargetPlatform()
 {
     if (isWindowsPhone())
     {
-        return Platform::OS_WP8;
+        return Platform::Platform_WP8;
     }
     else
     {
-        return Platform::OS_WINRT;
+        return Platform::Platform_WINRT;
     }
 }
 

@@ -525,7 +525,7 @@ const std::string& Application::getResourceRootPath(void)
 
 Application::Platform Application::getTargetPlatform()
 {
-    return Platform::OS_TIZEN;
+    return Platform::Platform_TIZEN;
 }
 
 void Application::setDeviceOrientation(int orientation)
