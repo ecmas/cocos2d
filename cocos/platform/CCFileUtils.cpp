@@ -1346,7 +1346,11 @@ long FileUtils::getFileSize(const std::string &filepath)
 #include <sys/types.h>
 #include <errno.h>
 #include <dirent.h>
-#include <ftw.h>
+
+// android doesn't have ftw.h
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
+#	include <ftw.h>
+#endif
 
 bool FileUtils::isDirectoryExistInternal(const std::string& dirPath) const
 {
@@ -1423,6 +1427,7 @@ bool FileUtils::createDirectory(const std::string& path)
 
 namespace
 {
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 	int unlink_cb(const char *fpath, const struct stat *sb, int typeflag, struct FTW *ftwbuf)
 	{
 		int rv = remove(fpath);
@@ -1431,23 +1436,26 @@ namespace
 		}
 		return rv;
 	}
+#endif
 }
 bool FileUtils::removeDirectory(const std::string& path)
 {
 #if !defined(CC_TARGET_OS_TVOS)
-    //std::string command = "rm -r ";
-    //// Path may include space.
-    //command += "\"" + path + "\"";
-    //if (system(command.c_str()) >= 0)
-    //    return true;
-	if (nftw(path.c_str(), unlink_cb, 64, FTW_DEPTH | FTW_PHYS) == -1) {
-        return false;
-    } else {
-        return true;
+#	if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    std::string command = "rm -r ";
+    // Path may include space.
+    command += "\"" + path + "\"";
+	if (system(command.c_str()) >= 0) {
+		return true;
 	}
-#else
-    return false;
+#	else
+	if (nftw(path.c_str(), unlink_cb, 64, FTW_DEPTH | FTW_PHYS) != -1) {
+        return true;
+    }
+#	endif
+//#else
 #endif
+    return false;
 }
 
 bool FileUtils::removeFile(const std::string &path)
