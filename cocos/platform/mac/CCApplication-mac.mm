@@ -122,7 +122,7 @@ void Application::setAnimationInterval(float interval, SetIntervalReason reason)
 
 Application::Platform Application::getTargetPlatform()
 {
-    return Platform::OS_MAC;
+    return Platform::CC_OS_MAC;
 }
 
 std::string Application::getVersion() {

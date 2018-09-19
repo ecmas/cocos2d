@@ -182,9 +182,11 @@ cocos2d::Size( (__size_in_points__).width * CC_CONTENT_SCALE_FACTOR(), (__size_i
 #define FLT_EPSILON     1.192092896e-07F
 #endif // FLT_EPSILON
 
+#ifndef DISALLOW_COPY_AND_ASSIGN
 #define DISALLOW_COPY_AND_ASSIGN(TypeName) \
             TypeName(const TypeName&);\
             void operator=(const TypeName&)
+#endif
 
 /**
 Helper macros which converts 4-byte little/big endian 

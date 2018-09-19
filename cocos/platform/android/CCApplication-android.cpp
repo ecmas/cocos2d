@@ -120,7 +120,7 @@ LanguageType Application::getCurrentLanguage()
 
 Application::Platform Application::getTargetPlatform()
 {
-    return Platform::OS_ANDROID;
+    return Platform::CC_OS_ANDROID;
 }
 
 std::string Application::getVersion()

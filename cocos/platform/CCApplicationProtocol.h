@@ -48,18 +48,18 @@ public:
      */
     enum class Platform
     {
-        OS_WINDOWS,     /**< Windows */
-        OS_LINUX,       /**< Linux */
-        OS_MAC,         /**< Mac OS X*/
-        OS_ANDROID,     /**< Android */
-        OS_IPHONE,      /**< iPhone */
-        OS_IPAD,        /**< iPad */
-        OS_BLACKBERRY,  /**< BlackBerry */
-        OS_NACL,        /**< Native Client in Chrome */
-        OS_EMSCRIPTEN,  /**< Emscripten */
-        OS_TIZEN,       /**< Tizen */
-        OS_WINRT,       /**< Windows Runtime Applications */
-        OS_WP8          /**< Windows Phone 8 Applications */
+		CC_OS_WINDOWS,     /**< Windows */
+		CC_OS_LINUX,       /**< Linux */
+		CC_OS_MAC,         /**< Mac OS X*/
+		CC_OS_ANDROID,     /**< Android */
+		CC_OS_IPHONE,      /**< iPhone */
+		CC_OS_IPAD,        /**< iPad */
+		CC_OS_BLACKBERRY,  /**< BlackBerry */
+		CC_OS_NACL,        /**< Native Client in Chrome */
+		CC_OS_EMSCRIPTEN,  /**< Emscripten */
+		CC_OS_TIZEN,       /**< Tizen */
+		CC_OS_WINRT,       /**< Windows Runtime Applications */
+		CC_OS_WP8          /**< Windows Phone 8 Applications */
     };
 
     /**
