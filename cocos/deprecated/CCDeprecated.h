@@ -1,6 +1,7 @@
 /****************************************************************************
  Copyright (c) 2013      cocos2d-x.org
- Copyright (c) 2013-2017 Chukong Technologies Inc.
+ Copyright (c) 2013-2016 Chukong Technologies Inc.
+ Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
 
  http://www.cocos2d-x.org
 
@@ -1016,18 +1017,18 @@ CC_DEPRECATED_ATTRIBUTE const LanguageType kLanguagePolish      = LanguageType::
 CC_DEPRECATED_ATTRIBUTE typedef LanguageType ccLanguageType;
 
 
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWindows      = Application::Platform::Platform_WINDOWS;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetLinux        = Application::Platform::Platform_LINUX;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetMacOS        = Application::Platform::Platform_MAC;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetAndroid      = Application::Platform::Platform_ANDROID;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetIphone       = Application::Platform::Platform_IPHONE;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetIpad         = Application::Platform::Platform_IPAD;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetBlackBerry   = Application::Platform::Platform_BLACKBERRY;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetNaCl         = Application::Platform::Platform_NACL;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetEmscripten   = Application::Platform::Platform_EMSCRIPTEN;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetTizen        = Application::Platform::Platform_TIZEN;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWinRT        = Application::Platform::Platform_WINRT;
-CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWP8          = Application::Platform::Platform_WP8;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWindows      = Application::Platform::OS_WINDOWS;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetLinux        = Application::Platform::OS_LINUX;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetMacOS        = Application::Platform::OS_MAC;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetAndroid      = Application::Platform::OS_ANDROID;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetIphone       = Application::Platform::OS_IPHONE;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetIpad         = Application::Platform::OS_IPAD;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetBlackBerry   = Application::Platform::OS_BLACKBERRY;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetNaCl         = Application::Platform::OS_NACL;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetEmscripten   = Application::Platform::OS_EMSCRIPTEN;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetTizen        = Application::Platform::OS_TIZEN;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWinRT        = Application::Platform::OS_WINRT;
+CC_DEPRECATED_ATTRIBUTE const Application::Platform kTargetWP8          = Application::Platform::OS_WP8;
 CC_DEPRECATED_ATTRIBUTE typedef Application::Platform TargetPlatform;
 
 CC_DEPRECATED_ATTRIBUTE const ResolutionPolicy kResolutionExactFit      = ResolutionPolicy::EXACT_FIT;

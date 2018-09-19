@@ -1,6 +1,7 @@
 /****************************************************************************
 Copyright (c) 2010-2012 cocos2d-x.org
-Copyright (c) 2013-2017 Chukong Technologies Inc.
+Copyright (c) 2013-2016 Chukong Technologies Inc.
+Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
 
 http://www.cocos2d-x.org
 
@@ -236,6 +237,9 @@ LanguageType Application::getCurrentLanguage()
         case LANG_BULGARIAN:
             ret = LanguageType::BULGARIAN;
             break;
+        case LANG_BELARUSIAN:
+            ret = LanguageType::BELARUSIAN;
+            break;
     }
     
     return ret;
@@ -253,7 +257,7 @@ const char * Application::getCurrentLanguageCode()
 
 Application::Platform Application::getTargetPlatform()
 {
-    return Platform::Platform_WINDOWS;
+    return Platform::OS_WINDOWS;
 }
 
 std::string Application::getVersion()

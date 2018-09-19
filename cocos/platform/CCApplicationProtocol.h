@@ -1,6 +1,7 @@
 /****************************************************************************
 Copyright (c) 2010-2012 cocos2d-x.org
-Copyright (c) 2013-2017 Chukong Technologies Inc.
+Copyright (c) 2013-2016 Chukong Technologies Inc.
+Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
 
 http://www.cocos2d-x.org
 
@@ -47,18 +48,18 @@ public:
      */
     enum class Platform
     {
-        Platform_WINDOWS,     /**< Windows */
-		Platform_LINUX,       /**< Linux */
-		Platform_MAC,         /**< Mac OS X*/
-		Platform_ANDROID,     /**< Android */
-		Platform_IPHONE,      /**< iPhone */
-		Platform_IPAD,        /**< iPad */
-		Platform_BLACKBERRY,  /**< BlackBerry */
-		Platform_NACL,        /**< Native Client in Chrome */
-		Platform_EMSCRIPTEN,  /**< Emscripten */
-		Platform_TIZEN,       /**< Tizen */
-		Platform_WINRT,       /**< Windows Runtime Applications */
-        Platform_WP8          /**< Windows Phone 8 Applications */
+        OS_WINDOWS,     /**< Windows */
+        OS_LINUX,       /**< Linux */
+        OS_MAC,         /**< Mac OS X*/
+        OS_ANDROID,     /**< Android */
+        OS_IPHONE,      /**< iPhone */
+        OS_IPAD,        /**< iPad */
+        OS_BLACKBERRY,  /**< BlackBerry */
+        OS_NACL,        /**< Native Client in Chrome */
+        OS_EMSCRIPTEN,  /**< Emscripten */
+        OS_TIZEN,       /**< Tizen */
+        OS_WINRT,       /**< Windows Runtime Applications */
+        OS_WP8          /**< Windows Phone 8 Applications */
     };
 
     /**
